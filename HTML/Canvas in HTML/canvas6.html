@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas House</title>
+</head>
+<body>
+    <canvas id="can1" width="400" height="400"></canvas>
+    <script>
+    let canvas = document.getElementById("can1");
+    let context = canvas.getContext('2d');
+
+    // Draw the house base
+    context.fillStyle = "#A0522D"; // Brown color
+    context.fillRect(100, 200, 200, 150); // x, y, width, height
+    context.strokeRect(100, 200, 200, 150); // Outline
+
+    // Draw the roof
+    context.beginPath();
+    context.moveTo(100, 200); // Left corner of roof
+    context.lineTo(200, 100); // Peak of roof
+    context.lineTo(300, 200); // Right corner of roof
+    context.closePath();
+    context.fillStyle = "#FF8C00"; // Orange color
+    context.fill();
+    context.stroke(); // Outline
+
+    // Draw the door
+    context.fillStyle = "black"; // Black color
+    context.fillRect(180, 280, 40, 70); // x, y, width, height
+
+    // Draw the windows
+    context.fillStyle = "#00BFFF"; // Blue color
+    context.fillRect(120, 230, 50, 50); // Left window
+    context.strokeRect(120, 230, 50, 50); // Outline for left window
+    
+    context.fillRect(230, 230, 50, 50); // Right window
+    context.strokeRect(230, 230, 50, 50); // Outline for right window
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="can1" width="400" height="400"></canvas>
+    <script>
+    let canvas = document.getElementById("can1");
+    let y = canvas.getContext('2d');
+
+    y.beginPath();
+    y.arc(200,200,100,0,Math.PI*2);
+    y.fillStyle="Yellow";
+    y.fill();
+
+    y.beginPath();
+    y.arc(150,170,15,0,Math.PI*2);
+    y.fillStyle="black";
+    y.fill();
+
+    y.beginPath();
+    y.arc(250,170,15,0,Math.PI*2);
+    y.fillStyle="black";
+    y.fill();
+
+    y.beginPath();
+    y.arc(200,220,50,0,Math.PI);
+    y.fillStyle="black";
+    y.stroke();
+
+
+    </script>
+
+
+
+
+</body>
+</html>

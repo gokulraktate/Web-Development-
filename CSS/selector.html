@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+
+    <style>
+        /* Element selector */
+        div{
+            background-color: aqua;
+        }
+
+        /* Class selector */
+        .cl{
+            background-color: red;
+        }
+
+        /* Id selector */
+        #ok{
+            background-color: brown;
+            text-align: center;
+        }
+
+        /* Child Selector */
+        div > p{
+            color: rgb(251, 47, 125);
+            background-color: rgb(173, 169, 177);
+        }
+
+        /* Decendent selector */
+        div p{
+            color: rgb(6, 209, 228);
+        }
+
+        /* Universal Selector */
+        *{
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: orange;
+        }
+
+        a:hover{
+            background-color: rebeccapurple;
+        }
+
+        /* Pseudo First child Selector */
+        p:first-child{
+            text-align: center;
+            color: magenta;
+        }
+
+        /* Pseudo First last Selector */
+        p:last-child{
+            text-align: center;
+            color: maroon;
+        }
+
+        /* Pseudo class nth-of-type Selector */
+        div:nth-of-type(3){
+            text-align: center;
+            color: rgb(6, 237, 75);
+        }
+
+        /* Group Selector */
+        h1,h2,h3{
+            background-color: chartreuse;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div>
+        This is a Div
+        <p>I am child of div</p>
+        <p>This is last child</p>
+    </div>
+
+    <div class="cl">
+        <p>This is fist child</p>
+        This is Class Selector
+    </div>
+
+    <div id="ok">
+        This is id selector
+
+        <article>
+            This is article
+            <p>This is Decendent selector</p>
+        </article>
+        <p>Para 1</p>
+        <p>Para 2</p>
+        <p>Para 3</p>
+    </div>
+
+    <h1>This is H1</h1>
+    <h2>This is H2</h2>
+    <h3>This is H3</h3>
+
+    <a href="https://google.com">Open Google</a>
+</body>
+</html>
